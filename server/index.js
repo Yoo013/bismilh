@@ -14,7 +14,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors({
-    origin: ["https://bismilh-server.vercel.app/"],
+    origin: ["http://localhost:5173"],
     credentials: true
 }))
 app.use(cookieParser())
@@ -22,7 +22,7 @@ app.use('/auth', UserRouter)
 
 
 
-mongoose.connect('mongodb+srv://kelas:L71noEVRLPMX9Rth@kelas.eei6kwp.mongodb.net/authentication')
+mongoose.connect(process.env.MONGODB_URL)
 
 
 app.listen(process.env.PORT, () => {
