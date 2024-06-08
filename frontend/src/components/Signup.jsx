@@ -16,7 +16,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
 e.preventDefault()
- Axios.post("https://bismilh-server-bener.vercel.app/auth/signup", {
+ Axios.post("https://bismilh-server-3.vercel.app/auth/signup", {
   username, 
  email, 
  password,
