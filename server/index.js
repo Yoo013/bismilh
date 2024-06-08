@@ -14,7 +14,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors({
-    origin: ["https://bismilh.vercel.app/"],
+    origin: ["https://bismilh-ffxi.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
 }))
